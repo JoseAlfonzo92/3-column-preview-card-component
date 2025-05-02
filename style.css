@@ -107,6 +107,7 @@ p{
     border: 2px solid var(--Very-light-gray);
     border-radius: 25px;
     padding: 15px 25px;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -114,30 +115,34 @@ p{
 
 
 #sedan-button{
-    background-color: var(--Bright-orange);
-}
-
-#sedan-button:hover{
     background-color: var(--Very-light-gray);
     color: var(--Bright-orange);
 }
 
-#suv-button{
-    background-color: var(--Dark-cyan);
+#sedan-button:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+    
 }
 
-#suv-button:hover{
+#suv-button{
     background-color: var(--Very-light-gray);
     color: var(--Dark-cyan);
 }
 
+#suv-button:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+}
+
 #luxury-button{
-    background-color: var(--Very-dark-cyan);
+    background-color: var(--Very-light-gray);
+    color: var(--Very-dark-cyan);
 }
 
 #luxury-button:hover{
-    background-color: var(--Very-light-gray);
-    color: var(--Very-dark-cyan);
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
 }
 
 /* Mobile */
