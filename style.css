@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /* colors */
+
+    /* Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    /* font families */
+
+    --font-family-Lexend: 'Lexend Deca', sans-serif;
+    --font-family-Big: 'Big Shoulders', sans-serif;
+
+
+}
+
+
+body{
+    
+    background-color: var(--Very-light-gray);
+    
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 58px;
+    width: 300px;
+    height: 450px;
+    background-color: var(--Transparent-white);
+    
+    
+}
+
+
+
+
+h1{
+    
+        font-family: var(--font-family-Big);
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--Very-light-gray);
+        margin-bottom: 2rem;
+}
+
+p{
+    
+        font-family: var(--font-family-Lexend);
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--Transparent-white);
+        margin-bottom: 2rem;
+}
+
+
+
+
+#sedan{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#suvs{
+    background-color: var(--Dark-cyan);
+}
+
+#luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.learn-button{
+    color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
+    border-radius: 25px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+
+
+
+#sedan-button{
+    background-color: var(--Bright-orange);
+}
+
+#sedan-button:hover{
+    background-color: var(--Very-light-gray);
+    color: var(--Bright-orange);
+}
+
+#suv-button{
+    background-color: var(--Dark-cyan);
+}
+
+#suv-button:hover{
+    background-color: var(--Very-light-gray);
+    color: var(--Dark-cyan);
+}
+
+#luxury-button{
+    background-color: var(--Very-dark-cyan);
+}
+
+#luxury-button:hover{
+    background-color: var(--Very-light-gray);
+    color: var(--Very-dark-cyan);
+}
+
+/* Mobile */
+
+@media (max-width: 375px) {
+
+    main{
+        height: 190vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    #sedan{
+        
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #luxury{
+        
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+
+
+
